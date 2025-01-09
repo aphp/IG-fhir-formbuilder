@@ -19,24 +19,24 @@ dependencies:
   hl7.fhir.fr.core: 2.1.0
 
 pages:
-   index.md:
+  index.md:
     title: Accueil
-   processus.md:
+  processus.md:
     title: Cadre d'évolution du formbuilder
-   habilitation.md:
+  habilitation.md:
     title: Matrice d'habilitation au FB et à son back end
-   usage-business-model.md:
+  usage-business-model.md:
     title: Modélisation des besoins métiers
-   quickstart.md:
+  quickstart.md:
     title: AP-HP FormBuilder Quick Start
-   module-termino.md:
+  module-termino.md:
     title: Manuel utilisateur du module de gestion des ressources terminologiques
-   glossary.md:
+  glossary.md:
     title: Glossaire
-   downloads.md:
+  downloads.md:
     title: Télécharger les spécifications
 
-parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   excludettl: true
   shownav: false
   path-liquid: liquid
