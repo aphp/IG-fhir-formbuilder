@@ -9,11 +9,9 @@ jurisdiction: urn:iso:std:iso:3166#FR "France" # https://www.hl7.org/fhir/values
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
   name: AP-HP
   url: https://aphp.fr
-  # email: test@example.org
 
 dependencies:
   hl7.fhir.fr.core: 2.1.0
@@ -21,45 +19,6 @@ dependencies:
 pages:
   index.md:
     title: Accueil
-  processus.md:
-    title: Cadre d'évolution du formbuilder
-  habilitation.md:
-    title: Matrice d'habilitation au FB et à son back end
-  usage-business-model.md:
-    title: Modélisation des besoins métiers
-  quickstart.md:
-    title: AP-HP FormBuilder Quick Start
-  module-termino.md:
-    title: Manuel utilisateur du module de gestion des ressources terminologiques
-  glossary.md:
-    title: Glossaire
-  downloads.md:
-    title: Télécharger les spécifications
-
-parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  excludettl: true
-  shownav: false
-  path-liquid: liquid
-#  path-resource:
-#    - input/resources/fils
-#  logging:
-#    - tx #tx: Messages describing the use of the terminology server (for debugging)
-#    - html #html: Log when validating an html page (troubleshooting only - leave off)
-#    - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
-#    - init #init: Messages describing the start up process (for debugging)
-#    - progress #progress: Overall progress messages
-#   validation: [allow-any-extensions, no-broken-links]
 
 menu:
   Accueil: index.html
-  Documentation projet:
-    Cadre d'évolution du formbuilder: processus.html
-    Matrice d'habilitation: habilitation.html
-  Usages:
-    Modélisation des besoins métiers: usage-business-model.html
-  Documentation utilisateur:
-    AP-HP FormBuilder Quick Start: quickstart.html
-    Manuel utilisateur du module de gestion des ressources terminologiques: module-termino.html
-  Ressources de conformités: artifacts.html
-  Plus:
-    Télécharger spécifications: downloads.html
