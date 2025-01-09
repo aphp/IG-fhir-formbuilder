@@ -1,1 +1,1 @@
-rootProject.name = "fig-formbuilder"
+rootProject.name = "IG-fhir-formbuilder"
