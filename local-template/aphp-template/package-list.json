@@ -1,0 +1,15 @@
+{
+  "package-id" : "aphp.fhir.template",
+  "title" : "Base template for FHIR IGs published by AP-HP",
+  "canonical" : "https://aphp.fr/ig/fhir/template",
+  "introduction" : "This is the basic template for FHIR guides published by AP-HP",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "",
+      "status" : "ci-build",
+      "current" : true
+    }
+  ]
+}

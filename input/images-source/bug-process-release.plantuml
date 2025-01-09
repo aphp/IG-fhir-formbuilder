@@ -1,0 +1,38 @@
+@startuml
+<style>
+activityDiagram {
+  rectangle {
+    RoundCorner 10
+    lineStyle 15-10
+  }
+
+}
+</style>
+
+start
+:Critical bug report;
+:Bug exploration;
+
+if (Bug correction?) then (no)
+  :Rollback to last stable version;
+else (possible quickly)
+  rectangle {
+    floating note right
+      at any time, these activities may be stopped and a
+      rollback to the last stable version can be performed
+    end note
+    repeat
+      :Bug resolution;
+      :Bug qualification;
+    repeat while (Qualification OK?) is (no) not (yes)
+  }
+  :Hotfix release;
+    note right: Increment the third version number
+
+endif
+
+stop
+
+
+
+@enduml

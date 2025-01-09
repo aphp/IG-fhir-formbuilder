@@ -1,0 +1,45 @@
+/* AP-HP family-specific colors */
+:root {
+  --ig-status-text-color: rgb(21, 61, 138); /* 1. IG Title and status text color */
+  --navbar-bg-color: rgb(0, 99, 175); /* 2. Header container color */
+  --footer-bg-color: rgb(208, 215, 216); /* 3. Footer background color*/
+  --footer-container-bg-color:  rgb(0, 99, 175); /* 4. Footer container color */
+  --stripe-bg-color: rgb(208, 215, 216); /* 5. Header strip color */
+  --btn-hover-color: rgb(21, 61, 138);  /* 6. Menu button hover color */
+  --btn-active-color: rgb(0, 162, 224); /* 7. Menu button active color */
+  --btn-text-color: rgb(244, 242, 242); /* 8. Menu button text color */
+  --btn-gradient-start-color: rgb(0, 162, 224); /* 9. Menu item gradient start color */
+  --btn-gradient-end-color: rgb(0, 99, 175); /* 10. Menu item gradient end  color */
+  --btn-gradient-start-color-alpha: rgba(0, 162, 224, 1); /* 11. Menu item gradient start color (with alpha) */
+  --btn-gradient-end-color-alpha:rgba(0, 99, 175, 1); /* 12. Menu item gradient end color (with alpha) */
+  --link-color: rgb(0, 99, 175); /* 13. Hyperlink text color */
+  --link-hover-color: rgb(21, 61, 138); /* 14. Hyperlink text hover color */
+  --publish-box-bg-color: rgb(255, 222, 20); /* 15. Publish box background color */
+  --publish-box-border: 1px solid rgb(234, 91, 12); /* 16.  Publish box border definition */
+  --toc-box-bg-color: rgba(255, 222, 20, .25); /* 17.  TOC box background color */
+  --toc-box-border: 1px solid rgb(255, 208, 0); /* 18. TOC box border definition */
+  --ig-header-color: rgb(244, 242, 242); /* 21. Header color (sides) */
+  --ig-header-container-color: rgb(255, 255, 255); /* 22. Header container color (center) */
+  --footer-nav-bg-color: rgb(244, 242, 242); /* 23. Footer navigation background color*/
+  --footer-text-color: rgb(255, 255, 255); /* 24. Footer highlight font color */
+  --footer-hyperlink-text-color: rgb(91, 197, 242); /* 25. Footer hyperlinks font color */
+  --footer-highlight-text-color: rgb(244, 242, 242);; /* 26. Footer highlight font color */
+  --breadcrumb-bg-color: rgb(255, 255, 255)  ; /* 27. Breadcrumb background color */
+  --breadcrumb-text-color: rgb(0, 99, 175); /* 28. Breadcrumb font color */
+}
+
+#ig-status {
+  clear: both;
+}
+
+table td, table th {
+  border: 1px solid rgb(208, 215, 216);
+}
+
+table th {
+  background-color: rgb(244, 242, 242);
+}
+
+h6 {
+  font-size: 13px;
+}

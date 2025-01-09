@@ -1,0 +1,79 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+workflow:
+  rules:
+    # Execution uniquement sur des push (commits ou tags) ou manuels
+    - if: $CI_PIPELINE_SOURCE == "push"
+    - if: $CI_PIPELINE_SOURCE == "web"
+
+stages:
+  - sushi-build
+  - ig-build
+  - deploy
+
+default:
+  image: harbor.eds.aphp.fr/public/fhir-ig-builder:sushi3.11.1-igp1.6.22
+
+cache:
+  # Persistence des publications entre les branches
+  paths:
+    - public
+
+clean_cache:
+  stage: .pre
+  image: bash:latest
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - apk add git
+  script:
+    - . ./ci/clean.sh
+  artifacts:
+    paths:
+      - public
+
+sushi:
+  stage: sushi-build
+  before_script:
+    - java -Dfile.encoding=UTF-8 -jar /usr/local/bin/manager.jar -ig .
+  script:
+    - sushi build .
+  after_script:
+    - mv ~/.fhir/packages fhirpackages
+  artifacts:
+    paths:
+      - fsh-generated
+      - fhirpackages
+
+igpublisher:
+  stage: ig-build
+  before_script:
+    - mkdir -p ~/.fhir
+    - mv fhirpackages ~/.fhir/packages
+  script:
+    - java -Dfile.encoding=UTF-8 -Xmx8192m -jar /usr/local/bin/publisher.jar -no-sushi -ig . -publish ${CI_PAGES_URL}
+  artifacts:
+    paths:
+      - output
+
+publish:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - . ./ci/publish.sh
+
+pages:
+  stage: deploy
+  image: bash:latest
+  script:
+    - . ./ci/deploy.sh
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME =~ /^[0-9]+-[a-zA-Z]{3}-/
+      when: never
+    - when: on_success
+
