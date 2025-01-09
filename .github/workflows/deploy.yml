@@ -51,9 +51,21 @@ jobs:
       - run: gradle buildIG
         continue-on-error: true
 
+      - name: Read version from sushi-config.yaml
+        id: get_version
+        run: |
+          VERSION=$(grep '^version:' sushi-config.yaml | sed 's/version: //')
+          echo "IG_VERSION=$VERSION" >> $GITHUB_ENV
+          echo "Detected IG Version: $VERSION"
+
       # Upload IG artifact
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
+      - name: Copy to versioned folder
+        run: |
+          mkdir -p "_site/${{ env.IG_VERSION }}"
+          cp -r ./output/* "_site/${{ env.IG_VERSION }}/"
 
       - name: Fix permissions
         run: cp -r ./output _site
