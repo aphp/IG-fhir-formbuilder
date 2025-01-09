@@ -16,7 +16,7 @@ publisher:
   # email: test@example.org
 
 dependencies:
-  aphp.fhir.fr.eds: 0.1.4
+  hl7.fhir.fr.core: 2.1.0
 
 pages:
    index.md:
