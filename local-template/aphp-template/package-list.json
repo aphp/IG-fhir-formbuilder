@@ -1,7 +1,7 @@
 {
   "package-id" : "aphp.fhir.template",
   "title" : "Base template for FHIR IGs published by AP-HP",
-  "canonical" : "https://aphp.fr/ig/fhir/template",
+  "canonical" : "https://aphp.github.io/IG-fhir-formbuilder",
   "introduction" : "This is the basic template for FHIR guides published by AP-HP",
   "list" : [
     {
@@ -10,6 +10,13 @@
       "path" : "",
       "status" : "ci-build",
       "current" : true
+    },
+    {
+      "version": "1.14.0",
+      "date": "2025-01-09",
+      "desc": "1.140.0 release",
+      "status": "release",
+      "path": "https://aphp.github.io/IG-fhir-formbuilder/1.14.0/"
     }
   ]
 }
