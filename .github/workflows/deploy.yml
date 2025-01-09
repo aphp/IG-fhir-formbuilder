@@ -62,12 +62,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Copy to versioned folder
-        run: |
-          mkdir -p "_site/${{ env.IG_VERSION }}"
-          cp -r ./output/* "_site/${{ env.IG_VERSION }}/"
-
-      - name: Fix permissions
+      - name: Copy the output folder
         run: cp -r ./output _site
 
       - name: Fix permissions
