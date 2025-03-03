@@ -11,6 +11,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
   <summary>Click here to view the changed bring with version 1.0.0</summary>
 <b>Addition</b>
 <ul>
+    <li>IG Home</li>
     <li>Quickstart</li>
 </ul>
 <b>Correction :</b>

@@ -1,7 +1,7 @@
 id: aphp.fhir.fr.formbuilder
 canonical: https://aphp.fr/ig/fhir/formbuilder
 name: APHPFormBuilder
-title: Guide d'implémentation de l'AP-HP FormBuilder
+title: FHIR implementation guide of AP-HP FormBuilder
 description: Le guide d'implémentation de l'Assistance Publique - Hôpitaux de Paris FormBuilder
 status: active # draft | active | retired | unknown
 version: 1.14.0
