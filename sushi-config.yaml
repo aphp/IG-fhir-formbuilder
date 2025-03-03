@@ -21,6 +21,8 @@ pages:
     title: IG Home
   fb-quickstart.md:
     title: Quickstart
+  fb-full-manual.md:
+    title: User manual
   change_log.md:
     title: Change log
   downloads.md:
@@ -30,6 +32,7 @@ menu:
   IG Home: index.html
   FormBuilder:
     Quickstart: fb-quickstart.html
+    User manual: fb-full-manual.html
   More:
     Change log: change_log.html
     Download Specification: downloads.html
