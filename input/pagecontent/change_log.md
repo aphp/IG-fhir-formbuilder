@@ -13,6 +13,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 <ul>
     <li>IG Home</li>
     <li>Quickstart</li>
+    <li>Download section</li>
 </ul>
 <b>Correction :</b>
 <ul>

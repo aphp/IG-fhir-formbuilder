@@ -23,6 +23,8 @@ pages:
     title: Quickstart
   change_log.md:
     title: Change log
+  downloads.md:
+    title: Download Specification
 
 menu:
   IG Home: index.html
@@ -30,3 +32,4 @@ menu:
     Quickstart: fb-quickstart.html
   More:
     Change log: change_log.html
+    Download Specification: downloads.html
