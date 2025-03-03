@@ -18,7 +18,23 @@ dependencies:
 
 pages:
   index.md:
-    title: Accueil
+    title: IG Home
+  fb-quickstart.md:
+    title: Quickstart
+  change_log.md:
+    title: Change log
 
 menu:
   Accueil: index.html
+  fb-quickstart.md:
+    title: Quickstart
+  change_log.md:
+    title: Change log
+
+menu:
+  IG Home: index.html
+  FormBuilder:
+    Quickstart: fb-quickstart.html
+  More:
+    Change log: change_log.html
+
