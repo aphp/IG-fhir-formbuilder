@@ -1,0 +1,49 @@
+{
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "https://aphp.fr/ig/fhir/formbuilder/StructureDefinition/QuestionnaireItemSource",
+          "extension": [
+            {
+              "url": "comment",
+              "valueString": "information is retrieved from a qualified Patient Identity Source"
+            }
+          ]
+        }
+      ],
+      "linkId": "8052840072486",
+      "text": "Patient Id",
+      "type": "group",
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "5052077605964",
+          "text": "Last name",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "6822388862286",
+          "text": "Given name",
+          "type": "string",
+          "required": false,
+          "repeats": true
+        }
+      ]
+    }
+  ],
+  "resourceType": "Questionnaire",
+  "id": "Myfirstform",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2025-06-02T13:40:09.071+00:00"
+  },
+  "version": "0.0.1",
+  "title": "My first form",
+  "status": "draft",
+  "description": "This form demonstrates AP-HP FormBuilder for new users",
+  "publisher": "AP-HP",
+  "name": "Myfirstform"
+}
