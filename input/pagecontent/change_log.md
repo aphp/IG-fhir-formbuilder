@@ -15,6 +15,8 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
     <li>Quickstart</li>
     <li>Download section</li>
     <li>Extension QuestionnaireItemSource</li>
+    <li>profils Questionnaire avec extension QuestionnaireItemSource</li>
+    <li> profils Questionnaire, CS et VS avec usecontext. Wording sur l'usage de ces usecontext</li>
 </ul>
 <b>Correction :</b>
 <ul>
