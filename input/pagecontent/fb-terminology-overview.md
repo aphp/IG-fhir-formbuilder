@@ -60,15 +60,29 @@ The ValueCodeableConcept binding is an example, you should define your own Value
 
 #### Create CodeSystem (and ValueSets) with the vocabulary module
 
-It is possible to create a CodeSystem with a useContext by any mean, the vocabulary module being such a mean. please refer to [the vocabulary module notice to know how]().
+It is possible to create a CodeSystem with a useContext by any mean, the vocabulary module being such a mean. Please refer to [the vocabulary module notice to know how]().
 
 #### Transform Answer Options into ValueSet
+For (open-)choice item with answer options defined, it is possible to transform the answer option into one ValueSet. It is interesting if the set of answer value is common to multiple items for example. 
 
-If a CodeSystem with the same useContext than the current form existe, it is possible to transform the answer choices of answer options item in ValueSet using the `Generate the corresponding ValueSet` button beneath the answer choices table. This action has 3 effects : 
-1. it enrich the CodeSystem with the same useContext as the current Questionnaire with a root item that has, as child, all the answer choices previously structured in the item interface of the AP-HP FormBuilder
-2. it generates an intensional ValueSet defined by the [descendent-of](https://www.hl7.org/fhir/R4/codesystem-filter-operator.html#filter-operator-descendent-of) the root item previously created, with the same useContext
-3. it changes the answer list source field in the item interface to Answer value set uri and fill the Answer value set field with the canonical url of the freshly created ValueSet. 
-
-[Please refer to the notice for more information on how to generate ValueSets from answerOption]()
+Clicking on the `Generate the corresponding ValueSet` buton belo the answer option table will:
+- update the useContext CodeSystem: 
+  - creation of a root concept: 
+    - display = title asked
+    - code = normalisation of the title asked
+  - create son of the newly created root concept, one for each answerOption: 
+    - display = display mentionned in the answerOption table
+    - code = code mentionned in the answerOption table, if empty: UUID 
+- creation of a ValueSet : 
+  - title = title asked
+  - id = name = CS root concept code
+  - url = [base]/ValueSet/[name]
+  - status = draft
+  - date = now()
+  - usecontext = same as the Questionnaire / CodeSystem
+  - Composition : `descendent-of` root concept
+- the current item seting is changed from answerOptions to answer value set URI, and the Answer value set field is filled with the canonical url of the newly created ValueSet
 
 **warning** : the vocabulary module work as "cancel and replace". If you have transformed Answer Option into ValueSet, you can easily loose them all if you don't acte with cautious. In such scenario contact an advanced FHIR user that can retrieve easily the old version of your CodeSystem, with all the ValueSets.
+
+[see also the user notice](fb-full-manual.html#valueset-creation)

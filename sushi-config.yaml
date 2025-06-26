@@ -23,6 +23,10 @@ pages:
     title: Quickstart
   fb-full-manual.md:
     title: User manual
+  fb-terminology-overview.md:
+    title: Overview
+  fb-terminology-module.md:
+    title: CodeSystem and ValueSet management
   change_log.md:
     title: Change log
   downloads.md:
@@ -33,6 +37,9 @@ menu:
   Questionnaire creation:
     Quickstart: fb-quickstart.html
     User manual: fb-full-manual.html
+  Terminological resources management :
+    Overview: fb-terminology-overview.html
+    CodeSystem and ValueSet management: fb-terminology-module.html
   More:
     Change log: change_log.html
     Download Specification: downloads.html

@@ -14,6 +14,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
     <li>IG Home</li>
     <li>Quickstart</li>
     <li>Full manual</li>
+    <li>Terminology module</li>
     <li>Download section</li>
     <li>Extension QuestionnaireItemSource</li>
     <li>profils Questionnaire avec extension QuestionnaireItemSource</li>
