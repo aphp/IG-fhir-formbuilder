@@ -12,7 +12,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 <b>Addition</b>
 <ul>
     <li>IG Home</li>
-    <li>Quickstart</li>
+    <li>Quickstart documentation</li>
     <li>Full manual</li>
     <li>Terminology module</li>
     <li>Download section</li>
