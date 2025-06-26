@@ -6,18 +6,18 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
     MINOR version when you add functionality in a backward compatible manner
     PATCH version when you make backward compatible bug fixes
 
-### <a id="1.0.0">Version 1.0.0 - xx/xx/xxxx</a>
+### <a id="1.0.0">Version 1.0.0 - 26/06/2025</a>
 <details>
   <summary>Click here to view the changed bring with version 1.0.0</summary>
 <b>Addition</b>
 <ul>
-    <li>IG Home</li>
+    <li>IG Home wording</li>
     <li>Quickstart documentation</li>
-    <li>Full manual</li>
-    <li>Terminology module</li>
+    <li>Full manual documentation</li>
+    <li>Terminology module documentation</li>
     <li>Download section</li>
     <li>Extension QuestionnaireItemSource</li>
-    <li>profils Questionnaire avec extension QuestionnaireItemSource</li>
+    <li>Profils Questionnaire avec extension QuestionnaireItemSource</li>
     <li>Profils Questionnaire, CS et VS avec usecontext. Wording sur l'usage de ces usecontext</li>
 </ul>
 </details>
