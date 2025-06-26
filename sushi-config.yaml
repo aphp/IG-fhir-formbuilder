@@ -30,7 +30,7 @@ pages:
 
 menu:
   IG Home: index.html
-  FormBuilder:
+  Questionnaire creation:
     Quickstart: fb-quickstart.html
     User manual: fb-full-manual.html
   More:
