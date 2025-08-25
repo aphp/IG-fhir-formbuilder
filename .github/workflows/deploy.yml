@@ -49,7 +49,6 @@ jobs:
 
       # Build IG
       - run: gradle buildIG
-        continue-on-error: true
 
       - name: Read version from sushi-config.yaml
         id: get_version
