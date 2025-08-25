@@ -1,10 +1,10 @@
 id: aphp.fhir.fr.formbuilder
 canonical: https://aphp.fr/ig/fhir/formbuilder
 name: APHPFormBuilder
-title: Guide d'implémentation de l'AP-HP FormBuilder
+title: FHIR implementation guide of AP-HP FormBuilder
 description: Le guide d'implémentation de l'Assistance Publique - Hôpitaux de Paris FormBuilder
 status: active # draft | active | retired | unknown
-version: 1.14.0
+version: 1.0.0
 jurisdiction: urn:iso:std:iso:3166#FR "France" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -14,11 +14,31 @@ publisher:
   url: https://aphp.fr
 
 dependencies:
-  hl7.fhir.fr.core: 2.1.0
 
 pages:
   index.md:
-    title: Accueil
+    title: IG Home
+  fb-quickstart.md:
+    title: Quickstart
+  fb-full-manual.md:
+    title: User manual
+  fb-terminology-overview.md:
+    title: Overview
+  fb-terminology-module.md:
+    title: CodeSystem and ValueSet management
+  change_log.md:
+    title: Change log
+  downloads.md:
+    title: Download Specification
 
 menu:
-  Accueil: index.html
+  IG Home: index.html
+  Questionnaire creation:
+    Quickstart: fb-quickstart.html
+    User manual: fb-full-manual.html
+  Terminological resources management :
+    Overview: fb-terminology-overview.html
+    CodeSystem and ValueSet management: fb-terminology-module.html
+  More:
+    Change log: change_log.html
+    Download Specification: downloads.html

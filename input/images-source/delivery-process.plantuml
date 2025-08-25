@@ -1,0 +1,45 @@
+@startuml
+
+start
+    floating note
+        Some user need some 
+        data in the CDW
+    end note
+
+:Qualification;
+
+
+group Functional instruction
+    :Business modeling; 
+        note right: Using FormBuilder
+    :Sources identification;
+    group Data discovery
+        :Initial perimeter;
+            note right: Using Usage-synchro
+        :Source to business mapping;
+            note right: Using MapBuilder
+        :Final perimeter;
+            note right: Using Usage-synchro
+    end group
+    group Profiling
+        :Data structure analysis;
+        :Column analysis;
+        :Relationship analysis;
+    end group
+end group
+
+group Functional conception
+    :Fhir profil creation;
+    :Fhir CodeSystem identification/creation;
+    :Fhir ConceptMap creation;
+    :Fhir StructureMap creation;
+        note right: Using MapBuilder
+    :Fhir ValueSet creation;
+end group
+
+stop
+    floating note
+        The integration of requested 
+        data is specified in a FHIR IG
+    end note
+@enduml
