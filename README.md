@@ -1,6 +1,6 @@
 # AP-HP - FormBuilder
 
-- The FHIR Implementation Guide of the FormBuilder is available on GitHub at: [https://aphp.github.io/formbuilder/](https://aphp.github.io/IG-fhir-formbuilder/)
+- The FHIR Implementation Guide of the FormBuilder is available on GitHub at: [https://aphp.github.io/IG-fhir-formbuilder](https://aphp.github.io/IG-fhir-formbuilder/)
 
 // TODO
 
