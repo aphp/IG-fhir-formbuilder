@@ -575,26 +575,34 @@ Three properties of ValueSet are searchable:
     </a>
 </div>
 
-Clicking on the ValueSet tile of interest will lead the user to the item page with the answer value set field filled with the selected ValueSet canonical url. 
+Clicking on the ValueSet tile of interest will lead the user to the item page with the answer value set field filled with the selected ValueSet canonical url.
 
 ##### Item manipulation
+
 ###### Addition
-There is two way to add an item in the item tree: 
+
+There is two way to add an item in the item tree:
+
 1. Using one of the `...` buton in the item tree
 2. Using the 'Add new item' buton either the one above, or the one below the Current item frame. 
 
 ###### Deletion
-There is two way to delete an item (and its descendent) in the item tree: 
+
+There is two way to delete an item (and its descendent) in the item tree:
+
 1. Using one of the `...` buton in the item tree
-2. Using the 'Delete this item' buton below the Current item frame. 
+2. Using the 'Delete this item' buton below the Current item frame.
 
 ###### modifiing item order
-There is two way to move an item (and its descendent) in the item tree: 
+
+There is two way to move an item (and its descendent) in the item tree:
+
 1. Using one of the `...` buton in the item tree
-2. drag-and-frop item in the item tree. 
+2. drag-and-frop item in the item tree.
 
 ###### duplicate item
-The `...` butons in the item tree provide a duplicate feature. The duplicates are strictly the same as the duplicated item (conditional display for exemple), except for the linkId. 
+
+The `...` butons in the item tree provide a duplicate feature. The duplicates are strictly the same as the duplicated item (conditional display for exemple), except for the linkId.
 
 #### Questionnaire properties interface
 
@@ -605,7 +613,7 @@ The `...` butons in the item tree provide a duplicate feature. The duplicates ar
 </div>
 <br/>
 
-This interface allows the modification of the main Questionnaire properties. 
+This interface allows the modification of the main Questionnaire properties.
 
 <table>
   <caption>
@@ -821,27 +829,35 @@ A frugal representation of the Questionnaire can be simulated. It is also possib
 </div>
 
 #### Advanced features
+
 ##### Questionnaire duplication
+
 While the save operation update the instance of Questionnaire instance on the server, the duplication operation let the existing instance as is and create a new Questionnaire instance. It is usefull to create a new version of a Questionnaire. 
 
 ##### Import local JSON
+
 This feature allow the loading of a Questionnaire from a JSON file, not necessarily available on the server.
 
 ##### Export as JSON
+
 To retrieve the JSON on your computer. 
 
 ##### Validation
+
 This feature execute the [$validation operation](https://www.hl7.org/fhir/R4/resource-operation-validate.html) on the current Questionnaire.
 The validation results are acknowledged by a pop-up that lists all the deviation from the norm. 
 
 #### Vocabulary module
+
 This module allow the creation of CodeSystem/ValueSets from CSV files. It is not a full terminology management service...
 It is well described in the [terminological module page](module-termino.html)
 
 #### Help
+
 The Question mark buton in the quick action bar lead the user to this implementation guide. 
 
 #### Bug report
+
 The bug buton in the quick action bar lead the user to the github of the project where he can leave an issue. 
 
 {% include markdown-link-references.md %}
