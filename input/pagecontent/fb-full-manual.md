@@ -530,7 +530,7 @@ On the right part of the screen, the details of the selected item are displayed 
   </tbody>
 </table>
 
-##### ValueSet creation
+##### ValueSet creation - <i>not fully implemented and therefor unavailable yet</i>
 
 The AP-HP FormBuilder offers the possibility to generate a ValueSet from the specified answer choices. 
 
@@ -564,10 +564,10 @@ For '(open-)choice' item with 'Answer value set URI', it is possible to call the
 <br/>
 the "ValueSet selector" allows search for the 'value set' to bind to the current item. 
 
-Three properties of ValueSet are searchable: 
- - title
- - status
- - useContext
+Three properties of ValueSet are searchable:
+
+- title
+- status
 
 <div style="text-align:center">
     <a id="valueset_selector">
