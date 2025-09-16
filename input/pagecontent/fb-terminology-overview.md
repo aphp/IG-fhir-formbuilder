@@ -16,7 +16,8 @@ If the corresponding ValueSet (and eventualy CodeSystem) are NOT available, the 
 
 In both scenario, the ValueSet SHALL be available in the information system in which the Questionnaire will finally be used. 
 
-### Create terminological resources on the fly
+### Create terminological resources on the fly - <i>not fully implemented and therefor unavailable yet</i>
+
 **Disclaimer** : the AP-HP FormBuilder is not a solution to manage properly terminological resources. the aim of this work is to provide a solution to create ValueSets on the fly for use in a Questionnaire for user that are not expert in terminology management. 
 
 To make a concept available for use in a ValueSet it must exists in a CodeSystem. It is therefor necessary to have a solution that manage CodeSystem, ValueSet (and Questionnaire). 

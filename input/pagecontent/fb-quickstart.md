@@ -85,7 +85,7 @@ Clicking on the "Edit form attributes" button at the top of the screen will disp
 
 ### Save my form
 
-<span>You can save your form on the FHIR server, via this button:<img src="save.png" alt="save" width="50%" height="50%"> (on the top left of the screen).</span>
+<span>You can save your form on the FHIR server, via this button:<img src="save.png" alt="save" width="4%" height="4%"> (on the top left of the screen).</span>
 
 ### Preview form
 
